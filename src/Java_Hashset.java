@@ -8,6 +8,7 @@ public class Java_Hashset {
         public static void main(String[] args) {
             Scanner s = new Scanner(System.in);
             int t = s.nextInt();
+            s.close();
             String [] pair_left = new String[t];
             String [] pair_right = new String[t];
 
@@ -15,11 +16,6 @@ public class Java_Hashset {
                 pair_left[i] = s.next();
                 pair_right[i] = s.next();
             }
-
-
-//Write your code here
-
-            s.close();
 
             HashSet<String> set = new HashSet(t);
             for (int i = 0; i < t; i++) {
